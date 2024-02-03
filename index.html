@@ -24,6 +24,9 @@
             color: white;
             padding: 0.5em;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav a {
@@ -46,6 +49,13 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -59,11 +69,29 @@
         <a href="#">Contact</a>
         <a href="#">About us</a>
         <a href="#">Foundation Documents</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Blog</a>
     </nav>
 
     <section>
         <h2>Welcome to Your Website!</h2>
         <p>This is a simple example of a webpage using HTML and CSS.</p>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <p>Explore our wide range of services designed to make a positive impact.</p>
+    </section>
+
+    <section>
+        <h2>Gallery</h2>
+        <p>Check out our photo gallery showcasing our events and activities.</p>
+    </section>
+
+    <section>
+        <h2>Latest Blog Posts</h2>
+        <p>Stay updated with our latest blog posts and articles.</p>
     </section>
 
     <footer>
